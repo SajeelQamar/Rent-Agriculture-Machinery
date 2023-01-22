@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:elevation="4dp"
+    app:cardUseCompatPadding="true"
+    android:background="#E44444"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#C4F871">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="55dp"
+                android:layout_marginTop="25dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="Name"
+                android:textSize="16sp"
+                android:id="@+id/from"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="-40dp"
+                android:text="From:"
+                android:textColor="@color/black"
+                android:id="@+id/t2"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="55dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                android:text="Machinename"
+                android:id="@+id/machinenameholder"/>
+
+            <TextView
+                android:id="@+id/t4"
+                android:layout_width="170dp"
+                android:layout_height="27dp"
+                android:layout_marginStart="30dp"
+                android:text="No new Request"
+                android:layout_marginTop="-2dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginTop="-30dp"
+                android:layout_marginStart="200dp"
+                android:backgroundTint="#CD0505"
+                android:text="View Details"
+                android:textSize="10dp"
+                android:id="@+id/viewdetailbtn"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

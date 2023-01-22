@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".selectmachinery">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="305dp"
+        android:text="Model"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="407dp"
+        android:text="Techincal Specification"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+    <androidx.cardview.widget.CardView
+        android:layout_width="250dp"
+        android:layout_height="220dp"
+        android:layout_marginLeft="55dp"
+        android:backgroundTint="@color/material_on_background_disabled"
+        app:cardCornerRadius="30dp">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="250dp"
+            android:layout_height="220dp"
+            android:layout_marginRight="22dp"
+            android:src="@drawable/b"
+
+            >
+
+        </ImageView>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <RelativeLayout
+        android:layout_width="380dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="225dp"
+        android:background="@drawable/border"
+
+
+        >
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginTop="58dp"
+            android:backgroundTint="@color/black"
+            android:src="@drawable/myloc" />
+
+        <TextView
+            android:id="@+id/showname"
+            android:layout_width="230dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="5dp"
+            android:text="Name"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/showrate"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_toRightOf="@+id/showname"
+            android:text="rate"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/showlocation"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/showname"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginRight="11dp"
+            android:text="location"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/m"
+        android:layout_width="380dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="327dp"
+        android:background="@drawable/border">
+
+        <TextView
+            android:id="@+id/showmodel"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:gravity="center_vertical"
+            android:text="model"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="italic" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="380dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="430dp"
+        android:background="@drawable/border">
+
+        <TextView
+            android:id="@+id/showspecification"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:gravity="center_vertical"
+            android:text="specifications"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="italic"
+
+
+            />
+
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/request"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="510dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#CD0505"
+        android:text="Request"
+        android:textSize="13dp">
+
+
+    </com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/callbtn"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="510dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toRightOf="@+id/request"
+        android:backgroundTint="#CD0505"
+        android:text="Call"
+        android:textSize="13dp">
+
+
+    </com.google.android.material.button.MaterialButton>
+
+
+
+
+</RelativeLayout>

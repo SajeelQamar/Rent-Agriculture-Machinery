@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".request">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/black">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="10dp"
+            android:text="Request Submission"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/enterhourtxtview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/datePickerButton"
+        android:layout_marginStart="5dp"
+        android:text="Enter Hours"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/enterhourtxtview"
+        android:layout_marginTop="3dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Select Date:"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/datePickerButton"
+        style="?android:spinnerStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textView"
+        android:layout_marginTop="5dp"
+        android:background="#9A3E3E"
+        android:onClick="openDatePicker"
+        android:text="JAN 01 2020"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/click"
+        android:layout_below="@+id/enterdecbox"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/black"
+
+        android:text="Submit Request" />
+
+    <TextView
+        android:id="@+id/enterdesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enterrequestlocation"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:text="Enter Description"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/enterdecbox"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/enterdesc"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/white"
+        android:gravity="top"
+        android:inputType="text|textMultiLine"
+        android:padding="5dp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/enternumbertxtview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner1"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:text="Enter Number"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/Enternumber"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/enternumbertxtview"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/white"
+        android:padding="5dp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/enterlocationtextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Enternumber"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:text="Enter Location"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/enterrequestlocation"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/enterlocationtextview"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/white"
+        android:padding="5dp"
+        android:textColor="@color/black" />
+
+
+
+
+
+</RelativeLayout>

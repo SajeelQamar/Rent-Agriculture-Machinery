@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_main"
+    tools:context=".Addpost"
+    android:background="@drawable/background2">
+    <ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/black">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Including Details"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+<TextView
+    android:layout_width="200dp"
+    android:layout_height="50dp"
+    android:textSize="25sp"
+    android:text="+ Add Images"
+    android:textColor="@color/white"
+    android:layout_marginStart="90dp"
+    android:layout_marginTop="110dp"
+    android:textStyle="bold"
+      />
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="300dp"
+                android:layout_height="130dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="65dp" />
+
+            <TextView
+                android:layout_marginStart="5dp"
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="190dp"
+                android:text="Name"
+                android:textColor="@color/white"
+                android:textSize="12dp">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/namebox"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/name"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginBottom="18dp"
+                android:background="#30ffffff"
+                android:drawablePadding="20dp"
+                android:padding="20dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/model"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/namebox"
+                android:layout_marginTop="-10dp"
+                android:layout_marginStart="5dp"
+                android:text="Model"
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+
+            <EditText
+                android:id="@+id/modelbox"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/model"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginBottom="18dp"
+                android:background="#30ffffff"
+                android:drawablePadding="20dp"
+                android:padding="20dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/spec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/modelbox"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="-10dp"
+                android:text="Specification"
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+
+            <EditText
+                android:id="@+id/specbox"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/spec"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginBottom="18dp"
+                android:background="#30ffffff"
+                android:drawablePadding="20dp"
+                android:padding="20dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/early"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/specbox"
+        android:layout_marginTop="-10dp"
+        android:layout_marginStart="5dp"
+        android:text="Early Hourly Rate"
+        android:textColor="@color/white"
+        android:textSize="12dp" />
+
+            <EditText
+                android:id="@+id/earlybox"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/early"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginBottom="18dp"
+                android:background="#30ffffff"
+                android:drawablePadding="20dp"
+                android:padding="20dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/locationn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/earlybox"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="-10dp"
+                android:text="Location"
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+
+            <EditText
+                android:id="@+id/locationbox"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/locationn"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginBottom="18dp"
+                android:background="#30ffffff"
+                android:drawablePadding="20dp"
+                android:padding="20dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="12dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/locationbox"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="-8dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@color/material_on_background_disabled"
+                android:text="Submit"
+                android:textSize="16dp">
+
+
+            </com.google.android.material.button.MaterialButton>
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
